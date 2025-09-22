@@ -17,8 +17,10 @@
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#works">Works</a></li>
+                <li><a href="#programming">Programming</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#photography">Photography</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -197,106 +199,106 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Programming Projects Section -->
+    <section id="programming" class="projects">
         <div class="container">
-            <h2 class="section-title">PROJECTS</h2>
+            <h2 class="section-title">PROGRAMMING</h2>
             <div class="project-filter">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="programming">Programming</button>
-                <button class="filter-btn" data-filter="video">Video</button>
-                <button class="filter-btn" data-filter="photography">Photography</button>
+                <button class="filter-btn" data-filter="basic">Basic</button>
+                <button class="filter-btn" data-filter="ml-ai">ML/AI</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
             </div>
             <div class="projects-grid">
-                <!-- Programming Projects -->
-                <div class="project-card" data-category="programming">
+                <!-- ML/AI Projects -->
+                <div class="project-card" data-category="ml-ai">
                     <div class="project-image">
-                        <div class="placeholder-image">AI PROJECT</div>
+                        <div class="placeholder-image">AI CLASSIFIER</div>
                     </div>
                     <div class="project-info">
                         <h3>AI IMAGE CLASSIFIER</h3>
-                        <p>Deep learning model for image classification using TensorFlow and computer vision techniques.</p>
+                        <p>Deep learning model for image classification using TensorFlow and computer vision techniques. Achieves 95% accuracy on test dataset.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>TensorFlow</span>
-                            <span>CV</span>
+                            <span>Computer Vision</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card" data-category="programming">
+                <div class="project-card" data-category="ml-ai">
                     <div class="project-image">
-                        <div class="placeholder-image">NLP PROJECT</div>
+                        <div class="placeholder-image">NLP ANALYZER</div>
                     </div>
                     <div class="project-info">
                         <h3>SENTIMENT ANALYZER</h3>
-                        <p>Natural language processing tool for sentiment analysis of social media content.</p>
+                        <p>Natural language processing tool for real-time sentiment analysis of social media content with 92% accuracy.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>NLP</span>
-                            <span>ML</span>
+                            <span>scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml-ai">
+                    <div class="project-image">
+                        <div class="placeholder-image">CHATBOT AI</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>INTELLIGENT CHATBOT</h3>
+                        <p>AI-powered conversational bot using transformers and context-aware responses for customer service automation.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Transformers</span>
+                            <span>PyTorch</span>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Video Projects -->
-                <div class="project-card" data-category="video">
+                <!-- Web Development Projects -->
+                <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <div class="placeholder-image">VIDEO PROJECT</div>
+                        <div class="placeholder-image">E-COMMERCE</div>
                     </div>
                     <div class="project-info">
-                        <h3>BRAND COMMERCIAL</h3>
-                        <p>High-impact commercial video showcasing modern cinematography and motion graphics.</p>
+                        <h3>E-COMMERCE PLATFORM</h3>
+                        <p>Full-stack e-commerce solution with modern UI, payment integration, and real-time inventory management.</p>
                         <div class="project-tags">
-                            <span>Premiere Pro</span>
-                            <span>After Effects</span>
-                            <span>Motion</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="placeholder-image">DASHBOARD</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ANALYTICS DASHBOARD</h3>
+                        <p>Interactive data visualization dashboard for business analytics with real-time charts and KPI tracking.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>D3.js</span>
+                            <span>API</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card" data-category="video">
+                <!-- Basic Programming Projects -->
+                <div class="project-card" data-category="basic">
                     <div class="project-image">
-                        <div class="placeholder-image">DOCUMENTARY</div>
+                        <div class="placeholder-image">CALCULATOR</div>
                     </div>
                     <div class="project-info">
-                        <h3>DOCUMENTARY SHORT</h3>
-                        <p>Compelling narrative documentary exploring social themes through visual storytelling.</p>
+                        <h3>SCIENTIFIC CALCULATOR</h3>
+                        <p>Advanced calculator application with complex mathematical operations and history tracking functionality.</p>
                         <div class="project-tags">
-                            <span>DaVinci</span>
-                            <span>Color Grading</span>
-                            <span>Sound</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Photography Projects -->
-                <div class="project-card" data-category="photography">
-                    <div class="project-image">
-                        <div class="placeholder-image">PORTRAIT SERIES</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>URBAN PORTRAITS</h3>
-                        <p>Contemporary portrait series capturing the essence of urban life and human emotion.</p>
-                        <div class="project-tags">
-                            <span>Portrait</span>
-                            <span>Lightroom</span>
-                            <span>Street</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="photography">
-                    <div class="project-image">
-                        <div class="placeholder-image">LANDSCAPE</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>NATURE COLLECTION</h3>
-                        <p>Breathtaking landscape photography showcasing the beauty of natural environments.</p>
-                        <div class="project-tags">
-                            <span>Landscape</span>
-                            <span>Nature</span>
-                            <span>Drone</span>
+                            <span>Python</span>
+                            <span>Tkinter</span>
+                            <span>Math</span>
                         </div>
                     </div>
                 </div>
@@ -304,49 +306,154 @@
         </div>
     </section>
 
-    <!-- Works Section -->
-    <section id="works" class="works">
+    <!-- Video Editing Section -->
+    <section id="video" class="works">
         <div class="container">
-            <h2 class="section-title">RECENT WORKS</h2>
-            <div class="works-grid">
-                <div class="work-item">
-                    <div class="work-image">
-                        <div class="placeholder-image">ML PROJECT</div>
+            <h2 class="section-title">VIDEO EDITING</h2>
+            <div class="video-grid">
+                <!-- YouTube Video Previews -->
+                <div class="video-item">
+                    <div class="video-frame">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                title="Sample Video 1" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <div class="work-overlay">
-                        <h3>PREDICTIVE ANALYTICS</h3>
-                        <p>Machine Learning</p>
+                    <div class="video-info">
+                        <h3>CINEMATIC TRAVEL VIDEO</h3>
+                        <p>A visually stunning travel documentary showcasing breathtaking landscapes and cultural experiences.</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-frame">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                title="Sample Video 2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>BRAND COMMERCIAL</h3>
+                        <p>High-impact commercial featuring dynamic motion graphics and professional color grading.</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-frame">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                title="Sample Video 3" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>MUSIC VIDEO EDIT</h3>
+                        <p>Creative music video with synchronized editing, visual effects, and artistic storytelling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography Section -->
+    <section id="photography" class="projects">
+        <div class="container">
+            <h2 class="section-title">PHOTOGRAPHY</h2>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <div class="photo-image">
+                        <div class="placeholder-image">PORTRAIT 1</div>
+                    </div>
+                    <div class="photo-overlay">
+                        <h3>Urban Portrait</h3>
+                        <p>Street Photography</p>
+                    </div>
+                </div>
+
+                <div class="photo-item">
+                    <div class="photo-image">
+                        <div class="placeholder-image">LANDSCAPE 1</div>
+                    </div>
+                    <div class="photo-overlay">
+                        <h3>Mountain Vista</h3>
+                        <p>Landscape Photography</p>
+                    </div>
+                </div>
+
+                <div class="photo-item">
+                    <div class="photo-image">
+                        <div class="placeholder-image">ARCHITECTURE</div>
+                    </div>
+                    <div class="photo-overlay">
+                        <h3>Modern Architecture</h3>
+                        <p>Architectural Photography</p>
+                    </div>
+                </div>
+
+                <div class="photo-item">
+                    <div class="photo-image">
+                        <div class="placeholder-image">NATURE 1</div>
+                    </div>
+                    <div class="photo-overlay">
+                        <h3>Wildlife Capture</h3>
+                        <p>Nature Photography</p>
+                    </div>
+                </div>
+
+                <div class="photo-item">
+                    <div class="photo-image">
+                        <div class="placeholder-image">EVENT 1</div>
+                    </div>
+                    <div class="photo-overlay">
+                        <h3>Cultural Event</h3>
+                        <p>Event Photography</p>
+                    </div>
+                </div>
+
+                <div class="photo-item">
+                    <div class="photo-image">
+                        <div class="placeholder-image">STREET 1</div>
+                    </div>
+                    <div class="photo-overlay">
+                        <h3>City Life</h3>
+                        <p>Street Photography</p>
+                    </div>
+                </div>
+            </div>
+            <div class="see-more-container">
+                <button class="see-more-btn">See More Photos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">CONTACT</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>tj.shadhin001@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Bashundhora R/A<br>Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h3>Availability</h3>
+                            <p>Open for freelance projects<br>and collaborations</p>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="work-item">
-                    <div class="work-image">
-                        <div class="placeholder-image">VIDEO WORK</div>
-                    </div>
-                    <div class="work-overlay">
-                        <h3>MUSIC VIDEO</h3>
-                        <p>Video Production</p>
-                    </div>
-                </div>
-                
-                <div class="work-item">
-                    <div class="work-image">
-                        <div class="placeholder-image">PHOTO WORK</div>
-                    </div>
-                    <div class="work-overlay">
-                        <h3>ARCHITECTURAL</h3>
-                        <p>Photography</p>
-                    </div>
-                </div>
-                
-                <div class="work-item">
-                    <div class="work-image">
-                        <div class="placeholder-image">AI WORK</div>
-                    </div>
-                    <div class="work-overlay">
-                        <h3>COMPUTER VISION</h3>
-                        <p>AI Development</p>
-                    </div>
+                <div class="contact-cta">
+                    <h3>Let's Work Together</h3>
+                    <p>Have a project in mind? Whether it's AI development, video editing, or photography - I'd love to hear from you!</p>
+                    <a href="mailto:tj.shadhin001@gmail.com" class="contact-btn">Get In Touch</a>
                 </div>
             </div>
         </div>

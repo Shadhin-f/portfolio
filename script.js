@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initNavigation();
     initTabs();
     initProjectFilter();
+    initSeeMorePhotos();
     initScrollEffects();
     initMobileMenu();
 });
@@ -143,7 +144,7 @@ function initTabs() {
     });
 }
 
-// Project Filtering
+// Project Filtering (Updated for Programming Section)
 function initProjectFilter() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
@@ -151,14 +152,17 @@ function initProjectFilter() {
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
             const filterValue = this.getAttribute('data-filter');
+            const parentSection = this.closest('section');
+            const cardsInSection = parentSection.querySelectorAll('.project-card');
+            const buttonsInSection = parentSection.querySelectorAll('.filter-btn');
             
-            // Remove active class from all filter buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Remove active class from all filter buttons in this section
+            buttonsInSection.forEach(btn => btn.classList.remove('active'));
             // Add active class to clicked button
             this.classList.add('active');
             
-            // Filter projects
-            projectCards.forEach(card => {
+            // Filter projects in this section only
+            cardsInSection.forEach(card => {
                 const category = card.getAttribute('data-category');
                 
                 if (filterValue === 'all' || category === filterValue) {
@@ -172,6 +176,24 @@ function initProjectFilter() {
     });
 }
 
+// Photography "See More" functionality
+function initSeeMorePhotos() {
+    const seeMoreBtn = document.querySelector('.see-more-btn');
+    
+    if (seeMoreBtn) {
+        seeMoreBtn.addEventListener('click', function() {
+            // This would typically open a modal or navigate to a full gallery
+            // For now, we'll show an alert
+            alert('This would open a full gallery with all photos. You can integrate this with a lightbox library or modal for a better experience.');
+            
+            // Example of what you might do:
+            // - Open a modal with more photos
+            // - Navigate to a dedicated gallery page
+            // - Load more photos dynamically
+        });
+    }
+}
+
 // Scroll Effects
 function initScrollEffects() {
     // Navbar background on scroll
@@ -179,10 +201,10 @@ function initScrollEffects() {
     
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(0, 0, 0, 0.98)';
-            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.5)';
+            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
         } else {
-            navbar.style.background = 'rgba(0, 0, 0, 0.95)';
+            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
             navbar.style.boxShadow = 'none';
         }
     });
