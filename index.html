@@ -1,1 +1,371 @@
-<h1>Shadhin Yooooo</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadhin - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#landing">SHADHIN</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#works">Works</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landing Section -->
+    <section id="landing" class="landing">
+        <div class="landing-container">
+            <h1 class="main-title">SHADHIN</h1>
+            <div class="typewriter-container">
+                <span class="typewriter-text" id="typewriter"></span>
+                <span class="cursor">|</span>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">ABOUT</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate <strong>programmer</strong>, <strong>video editor</strong>, and <strong>photographer</strong> 
+                        with a deep fascination for creating meaningful digital experiences.
+                    </p>
+                    <p class="about-description">
+                        My journey spans across the realms of <strong>Machine Learning and AI</strong>, where I build 
+                        intelligent systems that solve real-world problems. In video editing, I craft compelling 
+                        narratives through visual storytelling. As a photographer, I capture moments that speak 
+                        volumes about the world around us.
+                    </p>
+                    <p class="about-mission">
+                        I believe in the intersection of technology and creativity, constantly pushing boundaries 
+                        to create innovative solutions that make a difference.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">SKILLS</h2>
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="programming">
+                        <span class="tab-icon">🤖</span>
+                        Programming (ML/AI)
+                    </button>
+                    <button class="tab-btn" data-tab="video">
+                        <span class="tab-icon">🎬</span>
+                        Video Editing
+                    </button>
+                    <button class="tab-btn" data-tab="photography">
+                        <span class="tab-icon">📸</span>
+                        Photography
+                    </button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="programming">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Languages & Frameworks</h3>
+                                <ul class="skill-list">
+                                    <li>Python</li>
+                                    <li>JavaScript</li>
+                                    <li>TensorFlow</li>
+                                    <li>PyTorch</li>
+                                    <li>Scikit-learn</li>
+                                    <li>Node.js</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>AI/ML Specializations</h3>
+                                <ul class="skill-list">
+                                    <li>Computer Vision</li>
+                                    <li>Natural Language Processing</li>
+                                    <li>Deep Learning</li>
+                                    <li>Data Analysis</li>
+                                    <li>Neural Networks</li>
+                                    <li>Machine Learning Models</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Sample Projects</h3>
+                                <ul class="project-list">
+                                    <li>Image Classification System</li>
+                                    <li>Chatbot with NLP</li>
+                                    <li>Predictive Analytics Dashboard</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="video">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Software & Tools</h3>
+                                <ul class="skill-list">
+                                    <li>Adobe Premiere Pro</li>
+                                    <li>After Effects</li>
+                                    <li>DaVinci Resolve</li>
+                                    <li>Final Cut Pro</li>
+                                    <li>Motion Graphics</li>
+                                    <li>Color Grading</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Specializations</h3>
+                                <ul class="skill-list">
+                                    <li>Cinematic Editing</li>
+                                    <li>Motion Graphics</li>
+                                    <li>Sound Design</li>
+                                    <li>Visual Effects</li>
+                                    <li>Documentary Editing</li>
+                                    <li>Social Media Content</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Sample Works</h3>
+                                <ul class="project-list">
+                                    <li>Brand Commercial</li>
+                                    <li>Documentary Short</li>
+                                    <li>Music Video</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="photography">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Equipment & Software</h3>
+                                <ul class="skill-list">
+                                    <li>DSLR/Mirrorless</li>
+                                    <li>Adobe Lightroom</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Capture One</li>
+                                    <li>Professional Lighting</li>
+                                    <li>Drone Photography</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Specializations</h3>
+                                <ul class="skill-list">
+                                    <li>Portrait Photography</li>
+                                    <li>Landscape Photography</li>
+                                    <li>Street Photography</li>
+                                    <li>Event Photography</li>
+                                    <li>Product Photography</li>
+                                    <li>Architectural Photography</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Sample Works</h3>
+                                <ul class="project-list">
+                                    <li>Portrait Series</li>
+                                    <li>Nature Collection</li>
+                                    <li>Urban Exploration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="programming">Programming</button>
+                <button class="filter-btn" data-filter="video">Video</button>
+                <button class="filter-btn" data-filter="photography">Photography</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Programming Projects -->
+                <div class="project-card" data-category="programming">
+                    <div class="project-image">
+                        <div class="placeholder-image">AI PROJECT</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI IMAGE CLASSIFIER</h3>
+                        <p>Deep learning model for image classification using TensorFlow and computer vision techniques.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>CV</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="programming">
+                    <div class="project-image">
+                        <div class="placeholder-image">NLP PROJECT</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SENTIMENT ANALYZER</h3>
+                        <p>Natural language processing tool for sentiment analysis of social media content.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>ML</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video Projects -->
+                <div class="project-card" data-category="video">
+                    <div class="project-image">
+                        <div class="placeholder-image">VIDEO PROJECT</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>BRAND COMMERCIAL</h3>
+                        <p>High-impact commercial video showcasing modern cinematography and motion graphics.</p>
+                        <div class="project-tags">
+                            <span>Premiere Pro</span>
+                            <span>After Effects</span>
+                            <span>Motion</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="video">
+                    <div class="project-image">
+                        <div class="placeholder-image">DOCUMENTARY</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DOCUMENTARY SHORT</h3>
+                        <p>Compelling narrative documentary exploring social themes through visual storytelling.</p>
+                        <div class="project-tags">
+                            <span>DaVinci</span>
+                            <span>Color Grading</span>
+                            <span>Sound</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Photography Projects -->
+                <div class="project-card" data-category="photography">
+                    <div class="project-image">
+                        <div class="placeholder-image">PORTRAIT SERIES</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>URBAN PORTRAITS</h3>
+                        <p>Contemporary portrait series capturing the essence of urban life and human emotion.</p>
+                        <div class="project-tags">
+                            <span>Portrait</span>
+                            <span>Lightroom</span>
+                            <span>Street</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="photography">
+                    <div class="project-image">
+                        <div class="placeholder-image">LANDSCAPE</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>NATURE COLLECTION</h3>
+                        <p>Breathtaking landscape photography showcasing the beauty of natural environments.</p>
+                        <div class="project-tags">
+                            <span>Landscape</span>
+                            <span>Nature</span>
+                            <span>Drone</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="works">
+        <div class="container">
+            <h2 class="section-title">RECENT WORKS</h2>
+            <div class="works-grid">
+                <div class="work-item">
+                    <div class="work-image">
+                        <div class="placeholder-image">ML PROJECT</div>
+                    </div>
+                    <div class="work-overlay">
+                        <h3>PREDICTIVE ANALYTICS</h3>
+                        <p>Machine Learning</p>
+                    </div>
+                </div>
+                
+                <div class="work-item">
+                    <div class="work-image">
+                        <div class="placeholder-image">VIDEO WORK</div>
+                    </div>
+                    <div class="work-overlay">
+                        <h3>MUSIC VIDEO</h3>
+                        <p>Video Production</p>
+                    </div>
+                </div>
+                
+                <div class="work-item">
+                    <div class="work-image">
+                        <div class="placeholder-image">PHOTO WORK</div>
+                    </div>
+                    <div class="work-overlay">
+                        <h3>ARCHITECTURAL</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                
+                <div class="work-item">
+                    <div class="work-image">
+                        <div class="placeholder-image">AI WORK</div>
+                    </div>
+                    <div class="work-overlay">
+                        <h3>COMPUTER VISION</h3>
+                        <p>AI Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Shadhin. Crafted with passion.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#landing">Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
